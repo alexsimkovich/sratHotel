@@ -1,0 +1,36 @@
+/**
+* Navbar styles
+**/
+
+.navbar-default {
+  background-color: transparent;
+  border-color: transparent;
+
+  .navbar-nav {
+    margin-top: 10px;
+
+    & > li {
+      & > a {
+        color: @color-black;
+        font-size: 1em;
+        font-weight: 500;
+        text-transform: uppercase;
+      }
+
+      &:last-child {
+        &>a {
+          padding-right: 0;
+        }
+      }
+    }
+  }
+}
+
+.navbar {
+  min-height: 10px;
+  margin-bottom: 0;
+}
+
+.caret {
+  color: @color-green;
+}

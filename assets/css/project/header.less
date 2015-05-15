@@ -1,0 +1,60 @@
+/**
+* Header styles
+**/
+
+.header {
+
+  .header-top {
+    border-bottom: 1px solid #f1f1f1;
+
+    .header-phone,
+    .header-email,
+    .header-location {
+      display: inline-block;
+      vertical-align: middle;
+      font-size: 0.857em;
+      text-transform: uppercase;
+      color: @color-gray-light;
+      padding: 25px 30px 25px;
+      border-right: 1px solid #f1f1f1;
+
+      i {
+        margin-right: 5px;
+        color: @color-green;
+      }
+
+      span {
+        margin-left: 3px;
+        font-weight: bold;
+        color: @color-gray-dark;
+        text-transform: none;
+      }
+    }
+
+    .header-social {
+      float: right;
+      margin-top: 22px;
+      text-align: center;
+
+      a {
+        display: inline-block;
+        margin-left: 25px;
+        font-size: 1.1em;
+        color: #999;
+
+        &:hover {
+          color: @color-green;
+        }
+      }
+    }
+  }
+
+  .header-bottom {
+    padding: 20px 0;
+    border-bottom: 4px solid @color-green;
+
+    .header-logo {
+      float: left;
+    }
+  }
+}
