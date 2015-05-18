@@ -2,7 +2,23 @@
 * Planner styles
 **/
 
-.parallax-window {
-  min-height: 596px;
-  background: transparent;
+.planner {
+  position: relative;
+  margin-bottom: 160px;
+
+  .planner-block {
+    position: absolute;
+    top: -160px;
+    left: 50%;
+    margin-left: -405px;
+    width: 810px;
+    height: 320px;
+    padding: 35px 45px;
+    background-color: rgba(0,0,0,.7);
+
+    .planner-check-availability {
+      margin-top: 16px;
+      text-align: right;
+    }
+  }
 }

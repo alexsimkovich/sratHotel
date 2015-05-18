@@ -1,0 +1,39 @@
+/**
+* Parallax styles
+**/
+
+.parallax {
+  background-color: rgba(0, 0, 0, .4);
+  .parallax-window {
+    min-height: 596px;
+    background: transparent;
+
+    .parallax-text {
+      position: relative;
+      top: 120px;
+
+      .parallax_t {
+        font-size: 4.286em;
+        font-weight: 700;
+        text-transform: uppercase;
+        margin-top: 0;
+        margin-bottom: 30px;
+
+        &.__green {
+          color: @color-green;
+        }
+
+        &.__white {
+          color: #fff;
+        }
+      }
+
+      p {
+        font-size: 1.3em;
+        color: #fff;
+        font-weight: 300;
+        line-height: 30px;
+      }
+    }
+  }
+}

@@ -1,0 +1,53 @@
+/**
+* Controls styles
+**/
+
+.form-planner {
+
+  .form-group {
+    margin-bottom: 25px;
+  }
+
+  label {
+    font-size: .857em;
+    line-height: 12px;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: 10px;
+  }
+}
+
+.form-control {
+  display: inline-block;
+  height: 40px;
+  padding: 5px 15px;
+  font-size: .857em;
+  color: #999;
+  border-radius: 0;
+
+  &.__plannerInput {
+    background: #fff url(../../../assets/images/icons/calendar-default.png) no-repeat 95% center;
+  }
+}
+
+.theme-select {
+  width: 100%;
+  overflow: hidden;
+  background: #fff url(../../../assets/images/icons/select-arrow.png) no-repeat 100% 50%;
+
+  select.form-control {
+    background: transparent;
+    background-image: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+
+    &:focus {
+      outline: none;
+    }
+  }
+}
