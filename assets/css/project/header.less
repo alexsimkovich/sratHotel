@@ -19,6 +19,7 @@
       border-right: 1px solid #f1f1f1;
 
       i {
+        font-size: 1.3em;
         margin-right: 5px;
         color: @color-green;
       }
@@ -55,6 +56,26 @@
 
     .header-logo {
       float: left;
+    }
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .header {
+    .header-top {
+      .header-phone,
+      .header-email,
+      .header-location {
+        padding: 15px;
+      }
+
+      .header-phone {
+        padding-left: 0;
+      }
+
+      .header-social {
+        margin-top: 15px;
+      }
     }
   }
 }

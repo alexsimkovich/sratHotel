@@ -1,0 +1,39 @@
+/**
+* Gallery styles
+**/
+
+.gallery {
+  padding-bottom: 60px;
+
+  .gallery-block {
+
+    .gallery_ul {
+      .clear_ul();
+
+      .gallery_li {
+        padding-bottom: 30px;
+
+        img {
+          width: 100%;
+          height: auto;
+        }
+      }
+    }
+
+    .gallery-viewmore {
+      text-align: center;
+
+      a {
+        font-size: .857em;
+        font-weight: 100;
+        color: @color-gray-light;
+
+        &:after {
+          content: "\2192";
+          padding-left: 10px;
+          color: @color-green;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,228 @@
+/**
+* Footer styles
+**/
+
+.footer {
+
+  .footer-top {
+    padding-top: 40px;
+    padding-bottom: 55px;
+    background-color: @background-light;
+    border-top: 2px solid @color-green;
+
+    .footer-top_logo {
+      margin-bottom: 15px;
+    }
+
+    .footer-top_txt {
+      p {
+        font-size: .857em;
+        color: @color-gray-light;
+      }
+    }
+
+    .footer-top_address {
+
+      div {
+        font-size: 0.857em;
+        text-transform: uppercase;
+        color: @color-gray-light;
+        margin-bottom: 20px;
+
+        i {
+          width: 16px;
+          font-size: 1.3em;
+          margin-right: 5px;
+          color: @color-green;
+        }
+
+        span {
+          margin-left: 3px;
+          font-weight: bold;
+          color: @color-gray-dark;
+          text-transform: none;
+        }
+      }
+    }
+
+    .footer-top_rooms {
+      ul {
+        .clear_ul();
+
+        li {
+          display: inline-block;
+          width: 100%;
+          margin-bottom: 15px;
+
+          .rooms_img {
+            display: inline-block;
+            width: 70px;
+            height: 70px;
+            margin-right: 5px;
+            overflow: hidden;
+
+            img {
+              width: 100%;
+              height: auto;
+            }
+          }
+
+          .rooms_info {
+            display: inline-block;
+            vertical-align: top;
+            width: calc(~'100% - 80px');
+
+            .rooms_t {
+              margin-top: 10px;
+              margin-bottom: 5px;
+
+              a {
+                font-size: 1em;
+                color: @color-black;
+              }
+            }
+
+            .rooms_desc {
+              font-size: .857em;
+              color: @color-gray-light;
+            }
+          }
+        }
+      }
+    }
+
+    .footer-top_location {
+
+      .location_t {
+        font-size: 1em;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+      }
+
+      .location_map {
+        margin-bottom: 15px;
+      }
+
+      .location_txt {
+        font-size: .857em;
+        color: @color-gray-dark;
+      }
+    }
+  }
+
+  .footer-bottom {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #0b0b0b;
+
+    .footer-bottom_copy {
+      font-size: .857em;
+      color: @color-gray-light;
+
+      span {
+        color: @color-green;
+        text-transform: uppercase;
+      }
+
+      a {
+        color: #fff;
+        text-decoration: underline;
+      }
+    }
+
+    .footer-bottom_links {
+      text-align: right;
+
+      a {
+        display: inline-block;
+        color: @color-gray-light;
+        font-size: 0.857em;
+        text-transform: uppercase;
+
+        &:before {
+          content: "|";
+          color: @color-gray-light;
+          padding-left: 10px;
+          padding-right: 10px;
+        }
+
+        &:first-child {
+
+          &:before {
+            content: "";
+          }
+        }
+
+        &:hover {
+          color: #fff;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .footer {
+    .footer-top {
+      .footer-top_rooms {
+        ul {
+          li {
+            .rooms_info {
+              .rooms_t {
+                margin-top: 0;
+                margin-bottom: 3px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .footer {
+
+    .footer-top {
+      .footer-top_rooms {
+        ul {
+          li {
+            .rooms_info {
+              .rooms_t {
+                margin-top: 0;
+                margin-bottom: 3px;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .footer-bottom {
+
+      .footer-bottom_copy,
+      .footer-bottom_links {
+        margin-top: 5px;
+        margin-bottom: 5px;
+        text-align: center;
+      }
+
+      .footer-bottom_links {
+        a {
+
+          &:before {
+            padding-left: 5px;
+            padding-right: 5px;
+          }
+
+          &:first-child {
+            &:before {
+              padding-left: 0;
+              padding-right: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}
