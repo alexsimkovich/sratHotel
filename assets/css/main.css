@@ -10757,12 +10757,12 @@ a:focus {
   border-radius: 0;
 }
 .form-control.__plannerInput {
-  background: #ffffff url(../../../assets/images/icons/calendar-default.png) no-repeat 95% center;
+  background: #ffffff url(../../assets/images/icons/calendar-default.png) no-repeat 95% center;
 }
 .theme-select {
   width: 100%;
   overflow: hidden;
-  background: #ffffff url(../../../assets/images/icons/select-arrow.png) no-repeat 100% 50%;
+  background: #ffffff url(../../assets/images/icons/select-arrow.png) no-repeat 100% 50%;
 }
 .theme-select select.form-control {
   background: transparent;
@@ -10855,7 +10855,7 @@ a:focus {
   margin-bottom: 25px;
   padding-bottom: 20px;
   text-align: center;
-  background: url(../../../assets/images/icons/header-icon.png) no-repeat center bottom;
+  background: url(../../assets/images/icons/header-icon.png) no-repeat center bottom;
 }
 /**
 * Slick styles
