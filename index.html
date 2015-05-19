@@ -114,7 +114,7 @@
                 <div class="form-group">
                   <div class="col-xs-12">
                     <label>Check in</label>
-                    <input type="text" class="form-control __plannerInput" placeholder="10-05-2015"/>
+                    <input class="form-control __plannerInput" id="datetimepicker1" type="text" placeholder="10-05-2015"/>
                   </div>
                 </div>
               </div>
@@ -122,7 +122,7 @@
                 <div class="form-group">
                   <div class="col-xs-12">
                     <label>Check out</label>
-                    <input type="text" class="form-control __plannerInput" placeholder="17-05-2015"/>
+                    <input class="form-control __plannerInput" id="datetimepicker2" type="text" placeholder="17-05-2015"/>
                   </div>
                 </div>
               </div>
@@ -491,7 +491,7 @@
             <div class="footer-top_location">
               <div class="location_t">Our location</div>
               <div class="location_map">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2999959.6081856317!2d-75.80920404999999!3d42.75349790000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4ccc4bf0f123a5a9%3A0xddcfc6c1de189567!2sNew+York%2C+USA!5e0!3m2!1sen!2sua!4v1432024901301" width="100%" height="150" frameborder="0" style="border:0"></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2999959.6081856317!2d-75.80920404999999!3d42.75349790000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4ccc4bf0f123a5a9%3A0xddcfc6c1de189567!2sNew+York%2C+USA!5e0!3m2!1sen!2sua!4v1432024901301" width="100%" height="150" frameborder="0"></iframe>
               </div>
               <div class="location_txt">
                 At vero eos et accusamus et iusto odio dignissimos  blanditiis
@@ -525,6 +525,8 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
   <script src="assets/js/vendor/jquery-ui.js"></script>
   <script src="assets/js/vendor/bootstrap.js"></script>
+  <script src="assets/js/vendor/moment.min.js"></script>
+  <script src="assets/js/vendor/bootstrap-datetimepicker.js"></script>
   <script src="assets/js/vendor/parallax.js"></script>
   <script src="assets/js/vendor/slick.js"></script>
   <script src="assets/js/script.js"></script>
@@ -555,6 +557,14 @@
         arrows: true,
         slidesToShow: 3,
         slidesToScroll: 1
+      });
+
+      $('#datetimepicker1').datetimepicker({
+        format: 'DD-MM-YYYY'
+      });
+
+      $('#datetimepicker2').datetimepicker({
+        format: 'DD-MM-YYYY'
       });
     });
   </script>
